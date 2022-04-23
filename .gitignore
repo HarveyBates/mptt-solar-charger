@@ -1,6 +1,8 @@
 *.swp
 *.*.swp
 .DS_Store
+*.htm
+*.html
 
 # Temporary files
 *.000
@@ -25,3 +27,4 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
