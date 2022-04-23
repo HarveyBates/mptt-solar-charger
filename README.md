@@ -1,6 +1,9 @@
 # mptt-solar-charger
 MPTT solar charge controller based around the LT365IMSE solar charge controller / battery management IC.
 
+## Schematic
+Schematic can be found [here](/imgs/mptt-solar-charger.pdf)
+
 ## Features
 - [x] Barrel jack or solar input 9 - 18 V
 - [x] Reverse polarity protection (input)
