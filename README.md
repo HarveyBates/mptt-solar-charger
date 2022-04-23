@@ -1,8 +1,13 @@
 # mptt-solar-charger
-MPTT solar charge controller for 18650 cell(s).
+MPTT solar charge controller based around the LT365IMSE solar charge controller / battery management IC.
 
-<img src="/imgs/solar.png" width="100%" />
-
-<img src="/imgs/battery-management.png" width="50%"/>
-
-<img src="/imgs/notes.png" width="75%"/>
+## Features
+- [x] Barrel jack or solar input 9 - 18 V
+- [x] Reverse polarity protection (input)
+- [x] Input/output current and voltage monitoring (INA219 IC) over I<sub>2</sub>C
+- [x] Float voltage of 4.0 V
+- [x] Battery management:
+  - [x] 1000 mA charge current
+  - [x] Thermistor shut-off (-10 to +60 degrees Celcius)
+  - [x] Indicator LED will flash when fully charged
+- [x] Various fault LED's
