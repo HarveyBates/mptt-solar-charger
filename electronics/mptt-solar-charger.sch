@@ -148,26 +148,8 @@ Connection ~ 2100 2650
 Wire Wire Line
 	3400 2650 3400 2900
 Connection ~ 2100 3450
-$Comp
-L Device:C C2
-U 1 1 6264ABCC
-P 3800 3050
-F 0 "C2" H 3915 3096 50  0000 L CNN
-F 1 "1uF" H 3915 3005 50  0000 L CNN
-F 2 "" H 3838 2900 50  0001 C CNN
-F 3 "~" H 3800 3050 50  0001 C CNN
-	1    3800 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 3450 3800 3200
-Wire Wire Line
-	3800 2900 3800 2650
-Wire Wire Line
-	3400 2650 3800 2650
 Wire Wire Line
 	2750 2650 2950 2650
-Connection ~ 3400 3450
 Wire Wire Line
 	2100 3450 3400 3450
 Wire Wire Line
@@ -183,7 +165,6 @@ F 3 "~" H 3400 3050 50  0001 C CNN
 	1    3400 3050
 	1    0    0    -1  
 $EndComp
-Connection ~ 3800 2650
 Wire Wire Line
 	3400 2650 3250 2650
 Connection ~ 3400 2650
@@ -198,8 +179,6 @@ F 3 "" H 2650 2850 50  0001 C CNN
 	1    2650 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 3450 3800 3450
 $Comp
 L Device:LED D2
 U 1 1 6265C086
@@ -431,10 +410,10 @@ F 8 "IPC-7351B" H 6850 2250 50  0001 L BNN "STANDARD"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C3
+L Device:C C2
 U 1 1 62671672
 P 6250 2900
-F 0 "C3" H 6365 2946 50  0000 L CNN
+F 0 "C2" H 6365 2946 50  0000 L CNN
 F 1 "1uF" H 6365 2855 50  0000 L CNN
 F 2 "" H 6288 2750 50  0001 C CNN
 F 3 "~" H 6250 2900 50  0001 C CNN
@@ -477,10 +456,10 @@ F 3 "" H 7050 2250 50  0001 C CNN
 $EndComp
 Connection ~ 7150 3150
 $Comp
-L Device:C C4
+L Device:C C3
 U 1 1 6267C219
 P 8250 3300
-F 0 "C4" H 8365 3346 50  0000 L CNN
+F 0 "C3" H 8365 3346 50  0000 L CNN
 F 1 "10uF" H 8365 3255 50  0000 L CNN
 F 2 "" H 8288 3150 50  0001 C CNN
 F 3 "~" H 8250 3300 50  0001 C CNN
@@ -488,10 +467,10 @@ F 3 "~" H 8250 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L Device:C C5
 U 1 1 6267CD75
 P 8650 3300
-F 0 "C6" H 8765 3346 50  0000 L CNN
+F 0 "C5" H 8765 3346 50  0000 L CNN
 F 1 "100uF" H 8765 3255 50  0000 L CNN
 F 2 "" H 8688 3150 50  0001 C CNN
 F 3 "~" H 8650 3300 50  0001 C CNN
@@ -546,10 +525,10 @@ F 3 "~" H 10100 4800 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:C C5
+L Device:C C4
 U 1 1 626B28CC
 P 8350 5800
-F 0 "C5" H 8465 5846 50  0000 L CNN
+F 0 "C4" H 8465 5846 50  0000 L CNN
 F 1 "0.1uF" H 8465 5755 50  0000 L CNN
 F 2 "" H 8388 5650 50  0001 C CNN
 F 3 "~" H 8350 5800 50  0001 C CNN
@@ -1084,9 +1063,9 @@ MPTT Solar Charger
 Text Notes 7050 7050 0    47   ~ 0
 MPTT solar charger with battery management and I2C input and output monitoring. Built for use with 12 V solar \npanels and 18650 cell(s). Features reverse polarity protection and a DC jack for charging when solar is not \navailable. 
 Text Notes 8100 7650 0    47   ~ 0
-23rd April 2022
+27rd April 2022
 Text Notes 10550 7650 0    47   ~ 0
-1.1
+1.2
 Wire Wire Line
 	2950 2650 2950 2100
 Wire Wire Line
@@ -1129,8 +1108,6 @@ Wire Notes Line
 	4800 3500 4800 2450
 Wire Notes Line
 	4800 2450 4150 2450
-Wire Wire Line
-	3800 2650 4100 2650
 Wire Wire Line
 	4900 3250 4900 3850
 Wire Wire Line
@@ -1311,4 +1288,6 @@ Text Notes 7050 6700 0    79   ~ 0
 MPTT Solar Charger
 Wire Notes Line
 	7050 6750 8250 6750
+Wire Wire Line
+	3400 2650 4100 2650
 $EndSCHEMATC

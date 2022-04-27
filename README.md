@@ -1,5 +1,5 @@
 # mptt-solar-charger
-MPTT solar charge controller based around the LT365IMSE solar charge controller / battery management IC.
+MPTT solar charge controller based around the LT3652IMSE solar charge controller / battery management IC.
 
 ## Schematic
 Schematic can be found [here](/imgs/mptt-solar-charger.pdf)
